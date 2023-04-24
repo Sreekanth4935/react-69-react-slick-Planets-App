@@ -1,8 +1,6 @@
 // Write your code here
 import Slider from 'react-slick'
-
 import PlanetItem from '../PlanetItem'
-// import Slider from 'react-slick'
 import './index.css'
 
 const PlanetsSlider = props => {
@@ -16,17 +14,15 @@ const PlanetsSlider = props => {
   }
 
   return (
-    <div className="bg-container" data-testid="planets">
-      <h1 className="heading">PLANETS</h1>
-      <Slider {...settings}>
-        <ul className="ul-container">
+    <div data-testid="planets" className="bg-container">
+      <div className="one">
+        <h1 className="heading">PLANETS</h1>
+        <Slider {...settings}>
           {planetsList.map(eachPlanet => (
-            <div>
-              <PlanetItem eachPlanet={eachPlanet} key={eachPlanet.id} />
-            </div>
+            <PlanetItem eachPlanet={eachPlanet} key={eachPlanet.id} />
           ))}
-        </ul>
-      </Slider>
+        </Slider>
+      </div>
     </div>
   )
 }
