@@ -1,21 +1,15 @@
-// Write your code here
 import './index.css'
 
 const PlanetItem = props => {
-  const {eachPlanet} = props
+  const {planetDetails} = props
+  const {name, imageUrl, description} = planetDetails
 
   return (
-    <li>
-      <div className="li-cont">
-        <img
-          src={eachPlanet.imageUrl}
-          alt={`planet ${eachPlanet.name}`}
-          className="img"
-        />
-        <h1>{eachPlanet.name}</h1>
-        <p className="description">{eachPlanet.description}</p>
-      </div>
-    </li>
+    <div className="planet-container">
+      <img className="image" src={imageUrl} alt={`planet ${name}`} />
+      <h1 className="name">{name}</h1>
+      <p className="description">{description}</p>
+    </div>
   )
 }
 
