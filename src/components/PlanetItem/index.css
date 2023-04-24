@@ -1,0 +1,25 @@
+/* Write your CSS here */
+.img {
+  width: 200px;
+  height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .img {
+    width: 40%;
+    max-width: 300px;
+    height: 200px;
+  }
+}
+.li-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 2px red; */
+  font-family: 'Roboto';
+  margin-top: 10px;
+  color: #ffffff;
+}
+.description {
+  text-align: center;
+}
