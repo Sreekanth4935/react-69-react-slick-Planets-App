@@ -1,5 +1,5 @@
 In this project, let's build a **Planets App** by applying the concepts we have learned till now.
-
+https://react-slick.neostack.com/docs/get-started/
 ### Refer to the video below:
 
 <br/>
